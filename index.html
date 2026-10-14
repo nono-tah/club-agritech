@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#075c3b">
+  <meta name="description" content="Découvre le Club AgriTech : agriculture, électronique, robotique, intelligence artificielle et irrigation intelligente. Adhésion : 2 000 FCFA.">
+  <title>Club AgriTech | Apprendre, innover, cultiver l’avenir</title>
+  <style>
+    :root{--green:#075c3b;--green2:#0b7b4b;--lime:#d9f99d;--ink:#12231b;--muted:#5a6b61;--cream:#f6faf5;--line:#dce9df;--gold:#ffd95a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+    header{background:linear-gradient(125deg,#063f2b,#087448);color:white;overflow:hidden;position:relative}
+    header:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff24;border-radius:50%;right:-110px;top:-160px;box-shadow:0 0 0 45px #ffffff0c,0 0 0 95px #ffffff08}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;position:relative;z-index:1;gap:16px}
+    .brand{font-weight:850;letter-spacing:-.5px;font-size:1.15rem;display:flex;align-items:center;gap:10px}.brand-icon{display:grid;place-items:center;width:42px;height:42px;background:#d9f99d;color:#075c3b;border-radius:14px;font-size:1.35rem}
+    .nav-cta{color:#073c29;background:#fff;padding:10px 15px;border-radius:999px;text-decoration:none;font-weight:750;font-size:.92rem}
+    .hero{padding:58px 0 76px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:35px;position:relative;z-index:1}
+    .eyebrow{display:inline-block;border:1px solid #ffffff50;background:#ffffff12;border-radius:999px;padding:6px 12px;font-size:.84rem;font-weight:700;letter-spacing:.2px}
+    h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.04;letter-spacing:-2px;margin:18px 0}.hero h1 span{color:var(--lime)}.hero p{font-size:1.1rem;color:#e4f4e9;max-width:590px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:13px 18px;border-radius:12px;font-weight:800;text-decoration:none;border:2px solid transparent}.btn-light{background:var(--lime);color:#073c29}.btn-outline{border-color:#ffffff80;color:#fff}
+    .hero-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:24px;padding:24px;backdrop-filter:blur(4px)}.hero-visual{font-size:5rem;text-align:center;margin:4px 0 10px}.hero-card h2{margin:0 0 8px;font-size:1.4rem}.hero-card p{font-size:.98rem;margin:0;color:#e4f4e9}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.mini{background:#ffffff12;border-radius:12px;padding:12px;font-size:.9rem;font-weight:700}
+    section{padding:68px 0}.section-head{max-width:720px;margin-bottom:30px}.kicker{color:var(--green2);font-weight:850;text-transform:uppercase;font-size:.78rem;letter-spacing:1.2px}.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;letter-spacing:-.8px;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}
+    .purpose{display:grid;grid-template-columns:1fr 1fr;gap:22px}.purpose-card{border:1px solid var(--line);background:var(--cream);border-radius:20px;padding:26px}.purpose-card .symbol{font-size:2rem}.purpose-card h3{margin:8px 0}.purpose-card p{color:var(--muted);margin:0}
+    .program{background:var(--cream)}.program-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.program-card{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.program-card .emoji{width:48px;height:48px;border-radius:14px;background:#e2f5e8;display:grid;place-items:center;font-size:1.55rem}.program-card h3{margin:14px 0 6px}.program-card p{margin:0;color:var(--muted);font-size:.96rem}
+    .who{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.tag{padding:9px 13px;border-radius:999px;background:#e7f5eb;color:#145c3d;font-weight:700;font-size:.92rem}
+    .join{padding:64px 0}.join-box{background:linear-gradient(125deg,#063f2b,#087448);color:#fff;border-radius:26px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1fr .8fr;gap:28px;align-items:center}.join-box h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.join-box p{color:#e0f2e6}.price{background:var(--gold);color:#153f2b;border-radius:18px;padding:22px;text-align:center}.price small{display:block;font-weight:800;text-transform:uppercase;letter-spacing:1px}.price strong{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.3;letter-spacing:-1px}.price p{color:#294a35;margin:4px 0 0;font-size:.9rem}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:step}.step{border:1px solid var(--line);border-radius:16px;padding:22px}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:36px;height:36px;background:var(--green);color:white;border-radius:50%;font-weight:850}.step h3{margin:12px 0 5px}.step p{margin:0;color:var(--muted);font-size:.95rem}
+    .final-cta{text-align:center;background:#eff8f0}.final-cta h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 10px}.final-cta p{color:var(--muted);max-width:620px;margin:0 auto 22px}.final-cta .btn{background:var(--green);color:white}
+    footer{background:#052f21;color:#d5e9dc;padding:26px 0;font-size:.9rem}footer .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer a{color:#d9f99d}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:42px 0 58px}.hero-card{max-width:520px}.purpose,.join-box{grid-template-columns:1fr}.program-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.nav-cta{font-size:.82rem;padding:9px 11px}}
+    @media(max-width:470px){.program-grid{grid-template-columns:1fr}.brand{font-size:1rem}.brand-icon{width:36px;height:36px}.hero h1{letter-spacing:-1.2px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Navigation principale">
+      <div class="brand"><span class="brand-icon">🌱</span><span>Club AgriTech</span></div>
+      <a class="nav-cta" href="#adhesion">Adhérer · 2 000 FCFA</a>
+    </nav>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Robotique · Électronique · Agriculture</span>
+        <h1>L’agriculture de demain se construit <span>aujourd’hui.</span></h1>
+        <p>Un club pour apprendre, expérimenter et créer des solutions technologiques au service d’une agriculture plus intelligente, productive et durable en Côte d’Ivoire.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="#adhesion">🌿 Découvrir comment adhérer</a>
+          <a class="btn btn-outline" href="#programme">Voir le programme ↓</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="hero-visual" aria-hidden="true">🤖 🌾 💧</div>
+        <h2>De la pratique, des idées, des projets.</h2>
+        <p>Découvre les technologies, manipule des composants et imagine des solutions adaptées aux réalités du monde agricole.</p>
+        <div class="mini-grid"><div class="mini">⚙️ Électronique & IoT</div><div class="mini">🦾 Robotique</div><div class="mini">🧠 Intelligence artificielle</div><div class="mini">💧 Irrigation intelligente</div></div>
+      </aside>
+    </div>
+  </div>
+</header>
+<main>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Pourquoi ce club ?</span><h2>Faire le lien entre agriculture et technologie</h2><p>Les défis agricoles ont besoin de nouvelles idées et de compétences pratiques. Le Club AgriTech veut contribuer à former une communauté de personnes capables de comprendre les besoins du terrain et de développer des solutions utiles.</p></div>
+      <div class="purpose">
+        <article class="purpose-card"><div class="symbol">🎯</div><h3>Notre objectif</h3><p>Initier et accompagner les passionnés dans la découverte de l’AgriTech, développer leurs compétences techniques et encourager la réalisation de prototypes et de projets concrets pour une agriculture plus efficace et durable.</p></article>
+        <article class="purpose-card"><div class="symbol">🌍</div><h3>Notre ambition</h3><p>Faire émerger des innovateurs capables d’utiliser les capteurs, l’électronique, la robotique et les outils numériques pour répondre à des besoins agricoles locaux : gestion de l’eau, suivi des cultures et automatisation.</p></article>
+      </div>
+      <div class="who"><span class="tag">Étudiants</span><span class="tag">Jeunes professionnels</span><span class="tag">Passionnés d’agriculture</span><span class="tag">Débutants motivés</span></div>
+    </div>
+  </section>
+  <section class="program" id="programme">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Ce que nous allons explorer</span><h2>Le programme du Club AgriTech</h2><p>Des apprentissages progressifs, des échanges et des activités orientées vers la pratique. Le contenu évoluera selon les projets et le niveau des membres.</p></div>
+      <div class="program-grid">
+        <article class="program-card"><div class="emoji">🌱</div><h3>AgriTech</h3><p>Découvrir les technologies agricoles et réfléchir à leurs applications dans les exploitations.</p></article>
+        <article class="program-card"><div class="emoji">🔌</div><h3>Électronique</h3><p>Comprendre les composants, les cartes de prototypage, les capteurs et les bases des circuits.</p></article>
+        <article class="program-card"><div class="emoji">🤖</div><h3>Robotique</h3><p>Découvrir les systèmes automatisés et imaginer des dispositifs adaptés aux tâches agricoles.</p></article>
+        <article class="program-card"><div class="emoji">🧠</div><h3>Intelligence artificielle</h3><p>Explorer comment les données peuvent aider à analyser une situation et orienter une décision.</p></article>
+        <article class="program-card"><div class="emoji">📡</div><h3>Objets connectés (IoT)</h3><p>Utiliser des capteurs et comprendre la collecte et la transmission des données agricoles.</p></article>
+        <article class="program-card"><div class="emoji">💧</div><h3>Irrigation intelligente</h3><p>Étudier le suivi de l’humidité du sol et les principes de l’automatisation de l’arrosage.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="adhesion" class="join">
+    <div class="wrap join-box">
+      <div><span class="eyebrow">Rejoins la communauté</span><h2>Apprendre. Innover. Cultiver l’avenir.</h2><p>Les personnes intéressées peuvent rejoindre le groupe WhatsApp pour recevoir les informations sur les conditions d’intégration. L’adhésion est validée par l’administrateur après confirmation du paiement.</p><a class="btn btn-light" href="https://chat.whatsapp.com/EltcPeTzKfNH1aP892pCTJ?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer">💬 Demander à rejoindre sur WhatsApp</a></div>
+      <div class="price"><small>Frais d’adhésion</small><strong>2 000 FCFA</strong><p>Paiement selon les modalités communiquées par l’administrateur.</p></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">Comment intégrer le club ?</span><h2>3 étapes simples</h2></div>
+      <div class="steps">
+        <article class="step"><h3>Découvre le club</h3><p>Lis les objectifs, les thèmes d’apprentissage et les frais d’adhésion présentés sur cette page.</p></article>
+        <article class="step"><h3>Contacte-nous sur WhatsApp</h3><p>Clique sur le bouton pour accéder au groupe et prendre connaissance des modalités d’intégration.</p></article>
+        <article class="step"><h3>Effectue le paiement et attends la validation</h3><p>Après avoir reçu les consignes, effectue le paiement puis transmets la preuve à l’administrateur. Ton adhésion sera approuvée après vérification.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="final-cta">
+    <div class="wrap"><h2>Prêt·e à découvrir l’AgriTech ?</h2><p>Rejoins des personnes qui souhaitent apprendre, expérimenter et contribuer à l’agriculture de demain.</p><a class="btn" href="https://chat.whatsapp.com/EltcPeTzKfNH1aP892pCTJ?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4" target="_blank" rel="noopener noreferrer">Rejoindre le groupe WhatsApp ↗</a></div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span><strong>Club AgriTech</strong> · Robotique, électronique et agriculture</span><span>Apprendre | Innover | Cultiver l’avenir</span></div></footer>
+</body>
+</html>
